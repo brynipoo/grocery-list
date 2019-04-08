@@ -29,15 +29,11 @@ export default class Body extends React.Component {
     return (
       <div className='body-container'>
         <h4>Grocery List</h4>
+        <label htmlFor='newItem'>Add an item to your grocery list!</label>
         <form onSubmit={this.addNewItem}>
-          <label htmlFor='newItem'>Add to your grocery list</label>
           <input type='text' name='newItem' className='new-item-input'></input>
           <button onClick={this.addNewItem}>Add item</button>
         </form>
-        <header>
-          <p>Purchased</p>
-          <p>Item Title</p>
-        </header>
         <div className='list-body'>
         {this.state.itemTitles.map(item => {
           return <ListItem itemTitle={item} key={item} />

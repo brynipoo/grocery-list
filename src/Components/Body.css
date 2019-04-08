@@ -1,18 +1,12 @@
 .body-container {
   border: 1px solid black;
+  border-radius: .5rem;
   height: 400px;
   width: 400px;
   margin: 20px auto;
 }
 
-.body-container > header {
-  display: grid;
-  grid-template: repeat(1, auto) / repeat(2,auto);
-  border: 1px solid black;
-  height: fit-content;
-}
-
-.body-container > header > p {
-  grid-row-start: 1;
-  height: fit-content;
+.body-container form {
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
