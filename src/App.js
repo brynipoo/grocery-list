@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Body from './Components/Body';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {

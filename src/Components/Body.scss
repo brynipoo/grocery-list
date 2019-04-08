@@ -1,12 +1,29 @@
+@import '../variables.scss';
+
 .body-container {
   border: 1px solid black;
-  border-radius: .5rem;
+  border-radius: 8px;
   height: 400px;
   width: 400px;
-  margin: 20px auto;
+  margin: 0px auto 20px auto;
+  background-color: $primary-grey;
 
   form {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 15px;
+
+    input {
+      margin-right: 15px;
+      border-radius: 4px;
+      background-color: $light-grey;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: $light-grey;
+      border: 1px solid $dark-grey;
+      border-radius: 4px;
+      font-size: 14px;
+    }
   }
 }

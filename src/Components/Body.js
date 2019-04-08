@@ -1,6 +1,6 @@
 import React from 'react';
 import ListItem from './ListItem';
-import './Body.scss'
+import './Body.scss';
 
 export default class Body extends React.Component {
   constructor() {
@@ -28,7 +28,7 @@ export default class Body extends React.Component {
   render() {
     return (
       <div className='body-container'>
-        <h4>Grocery List</h4>
+        <h3>Grocery List</h3>
         <label htmlFor='newItem'>Add an item to your grocery list!</label>
         <form onSubmit={this.addNewItem}>
           <input type='text' name='newItem' className='new-item-input'></input>
