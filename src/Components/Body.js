@@ -1,6 +1,6 @@
 import React from 'react';
 import ListItem from './ListItem';
-import './Body.css'
+import './Body.scss'
 
 export default class Body extends React.Component {
   constructor() {
